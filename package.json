@@ -1,0 +1,34 @@
+{
+  "name": "memo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "example.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.4",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^7.0.5",
+    "@types/node-rsa": "^1.1.1",
+    "commander": "^7.1.0",
+    "fs-extra": "^5.0.0",
+    "ganache-cli": "^6.0.3",
+    "inquirer": "^8.0.0",
+    "mocha": "^4.1.0",
+    "node-forge": "^0.10.0",
+    "node-rsa": "^1.1.1",
+    "solc": "^0.4.19",
+    "truffle-hdwallet-provider": "0.0.3",
+    "web3": "^1.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha --recursive",
+    "compile": "truffle compile",
+    "deploy": "truffle migrate",
+    "memo": "node ./dist/console.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

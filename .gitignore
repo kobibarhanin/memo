@@ -1,0 +1,4 @@
+node_modules
+build/contracts
+dist
+client/context/context.template.ts
