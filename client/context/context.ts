@@ -118,4 +118,8 @@ export class Context {
     context[attribute] = value;
     fs.writeFileSync(CONTEXT_FILE, JSON.stringify(context, null, 2));
   }
+
+  getMnemonic() {
+    return fs.readFileSync(`${MEMO_DIR}/mnemonic.secret`).toString().trim();
+  }
 }
